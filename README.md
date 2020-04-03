@@ -1,7 +1,7 @@
 # istio-port-forwading
 port forwarding add-ons
 
-jaeger:
+`jaeger:`
 
 kubectl --namespace istio-system \
     port-forward $(kubectl \
@@ -11,7 +11,7 @@ kubectl --namespace istio-system \
     --output jsonpath='{.items[0].metadata.name}') \
     16686:16686 &
     
-kiali:
+`kiali:`
 
 kubectl --namespace istio-system     port-forward $(kubectl \
     --namespace istio-system \
