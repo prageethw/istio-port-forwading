@@ -1,5 +1,5 @@
 # istio-port-forwading
-port forwarding add-ons
+port forwarding add-ons istio 1.5.1
 
 `jaeger:`
 
