@@ -31,9 +31,10 @@ kubectl --namespace istio-system     port-forward $(kubectl \
     
 `prometheus`
 
-kubectl --namespace istio-system     port-forward $(kubectl \
+kubectl --namespace istio-system \
+    port-forward $(kubectl \
     --namespace istio-system \
     get pod \
     --selector app=prometheus \
     --output jsonpath='{.items[0].metadata.name}') \
-    9000:9000 &
+    9090:9090 &
