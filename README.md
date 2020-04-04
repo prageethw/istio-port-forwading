@@ -25,7 +25,7 @@ kubectl --namespace istio-system     port-forward $(kubectl \
 kubectl --namespace istio-system     port-forward $(kubectl \
     --namespace istio-system \
     get pod \
-    --selector app=kiali \
+    --selector app=grafana \
     --output jsonpath='{.items[0].metadata.name}') \
     3000:3000 &
     
