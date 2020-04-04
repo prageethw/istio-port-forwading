@@ -29,7 +29,7 @@ kubectl --namespace istio-system     port-forward $(kubectl \
     --output jsonpath='{.items[0].metadata.name}') \
     3000:3000 &
     
-`prometheus`
+`prometheus:`
 
 kubectl --namespace istio-system \
     port-forward $(kubectl \
